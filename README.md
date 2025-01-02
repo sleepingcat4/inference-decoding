@@ -6,3 +6,5 @@ A 6 year's rage repository. Where I explain and write easy to understandable inf
 3. Code to run them on European Pre-exa and Exa-scale supercomputers.
 
 These are tested and well-documented. I am planning to maintain this repository religiously. Filenames are self-explanatory + if you see a flag like `leo` or `juwel` it means it is supercomputer compatible code. I include my slurm scripts as well so have fun. 
+
+**For colab code:** https://colab.research.google.com/drive/17U4lj2YLNH0GdxR9iovBnHdONB4QEh_a?usp=sharing
