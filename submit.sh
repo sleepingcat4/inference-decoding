@@ -10,15 +10,15 @@
 #SBATCH --output=/leonardo_scratch/large/userexternal/<usrname>/dock-exp/log.txt
 #SBATCH --error=/leonardo_scratch/large/userexternal/<username>/dock-exp/error.txt
 
-eval "$(/leonardo/home/userexternal/tahmed00/miniforge3/bin/conda shell.bash hook)"
+eval "$(/leonardo/home/userexternal/<username>/miniforge3/bin/conda shell.bash hook)"
 conda activate my_env
 
-RESULT_DIR="/leonardo_scratch/large/userexternal/tahmed00/dock-exp"
+RESULT_DIR="/leonardo_scratch/large/userexternal/<username>/dock-exp"
 RESULT_FILE="$RESULT_DIR/result.txt"
 
 START_TIME=$(date +%s)
 
-python -u /leonardo_scratch/large/userexternal/tahmed00/scripts/exp-code.py > $RESULT_FILE
+python -u /leonardo_scratch/large/userexternal/<username>/scripts/exp-code.py > $RESULT_FILE
 
 END_TIME=$(date +%s)
 TIME_TAKEN=$((END_TIME - START_TIME))
