@@ -7,8 +7,8 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=16
 #SBATCH --time=00:05:00
-#SBATCH --output=/leonardo_scratch/large/userexternal/tahmed00/dock-exp/log.txt
-#SBATCH --error=/leonardo_scratch/large/userexternal/tahmed00/dock-exp/error.txt
+#SBATCH --output=/leonardo_scratch/large/userexternal/<usrname>/dock-exp/log.txt
+#SBATCH --error=/leonardo_scratch/large/userexternal/<username>/dock-exp/error.txt
 
 eval "$(/leonardo/home/userexternal/tahmed00/miniforge3/bin/conda shell.bash hook)"
 conda activate my_env
