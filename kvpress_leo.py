@@ -2,11 +2,16 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 import torch
 from kvpress import StreamingLLMPress
 
-checkpoint = "HuggingFaceTB/SmolLM-1.7B"
+model_dir = "/leonardo_scratch/large/userexternal/tahmed00/model/SmolLM-1.7B"
+checkpoint = model_dir
+
+model = AutoModelForCausalLM.from_pretrained(checkpoint)
+tokenizer = AutoTokenizer.from_pretrained(checkpoint)
 
 pipe = pipeline(
     "kv-press-text-generation",
-    model=checkpoint,
+    model=model,
+    tokenizer=tokenizer,
     torch_dtype="auto",
     model_kwargs={
         "max_length": 100,
