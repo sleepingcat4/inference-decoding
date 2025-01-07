@@ -15,3 +15,6 @@ These are tested and well-documented. I am planning to maintain this repository 
 
 `Graph Inference:` One of my favourite methods that uses `torch.compile()` to get fast inference speed while `use_cache` method is turned-on. [Use cache uses KVPress caching] While it shows fast results on Google colab, it was significantly slower on Leonardo. 
 
+`Prompt Lookup:` Again one of my favourite methods and it had the most fastest inference speed of 1.21 seconds. 
+
+I am excited to share more methods in the coming future as I find more. Including batch inference technique using Ray lib and continous batching. 
