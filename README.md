@@ -8,3 +8,10 @@ A 6 year's rage repository. Where I explain and write easy to understandable inf
 These are tested and well-documented. I am planning to maintain this repository religiously. Filenames are self-explanatory + if you see a flag like `leo` or `juwel` it means it is supercomputer compatible code. I include my slurm scripts as well so have fun. 
 
 **For colab code:** https://colab.research.google.com/drive/17U4lj2YLNH0GdxR9iovBnHdONB4QEh_a?usp=sharing
+
+`KVPress:` Fastest method according to my test on Italian supercomputer Leonardo. On a single A100 64GB card with 16 CPUs. 
+
+`Prompt Caching:` Prompt Caching is relatively good from my tests but it certainly does not come same as par as KVPress. 
+
+`Graph Inference:` One of my favourite methods that uses `torch.compile()` to get fast inference speed while `use_cache` method is turned-on. [Use cache uses KVPress caching] While it shows fast results on Google colab, it was significantly slower on Leonardo. 
+
